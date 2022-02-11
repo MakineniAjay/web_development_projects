@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#heading{
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: rgb(42, 15, 68);
+    background-color: aqua;
+}
+
+.gamecont{
+    display: flex;
+    /* background-color: beige; */
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(210, 225, 243);
+}
+
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+
+.ginfo{
+    margin: 0 100px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win{
+    width: 0px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 100px;
+    transition: width 1s ease-in-out;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.but{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: aquamarine;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+.but:hover{
+    background-color: rgb(73, 238, 183)
+}
+
+.but:active{
+    background-color: rgb(52, 214, 160);
+}
+
