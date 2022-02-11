@@ -93,3 +93,19 @@
     background-color: rgb(52, 214, 160);
 }
 
+@media screen and (max-width: 800px){
+    .gamecont{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+    }
+    .box{
+        font-size: 25vw;
+    }
+    .ginfo{
+        padding-top: 50px;
+    }
+}
