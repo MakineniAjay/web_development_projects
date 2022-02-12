@@ -103,7 +103,7 @@
         grid-template-rows: repeat(3, 25vw);
     }
     .box{
-        font-size: 25vw;
+        font-size: 18vw;
     }
     .ginfo{
         padding-top: 50px;
