@@ -36,13 +36,11 @@ let nextSequence = ()=>{
 let checkAnswer = (colour)=>{
     if(colour === gamePattern[i]){
         i += 1;
-        console.log("success "+ i);
         if(i===gamePattern.length){
             nextSequence();
         }
     }
     else{
-        console.log("wrong");
         $("h1").html("GAME OVER<br><br>Press any Key to Start");
         playSound("wrong");
         gameOver();
@@ -50,7 +48,6 @@ let checkAnswer = (colour)=>{
 }
 
 let gameOver = ()=>{
-    console.log(over)
     level = 1;
     started = false;
     gamePattern = [];
